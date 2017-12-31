@@ -91,14 +91,14 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 
 		JFrame frame = new JFrame();
 
-		frame.setTitle("Space Invaders");	                  		//Names the window "Cards".
-		frame.setLocation(250, 100);			     				//Determines where it pops up on a screen.
-		frame.setSize(616, 600);									//Panel set to 616X600 pixels.
-		frame.add(this);											//Sets the size of the window.
+		frame.setTitle("Space Invaders");	                  		//Names the window "Space invaders".
+		frame.setLocation(250, 100);			     			//Determines where it pops up on a screen.
+		frame.setSize(616, 600);						//Panel set to 616X600 pixels.
+		frame.add(this);							//Sets the size of the window.
 		frame.addKeyListener(this);
-		frame.setBackground(Color.black);							//Background color set to black.
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		//Ends the window functionality upon closing.
-		frame.setVisible(true);										//Allows the user to see the window.
+		frame.setBackground(Color.black);					//Background color set to black.
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);			//Ends the window functionality upon closing.
+		frame.setVisible(true);							//Allows the user to see the window.
 
 		this.setBackground(new Color (0, 0, 0));				
 	}
