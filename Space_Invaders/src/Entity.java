@@ -87,7 +87,7 @@ public abstract class Entity {
 		height = h;
 		color = theColor;
 		velocity = vel;
-		isHit = false;												//isHit is set to false to prevent any
+		isHit = false;							//isHit is set to false to prevent any
 		collisionBox = new Rectangle(theX,theY, width, height);		//unwanted actions.
 	}
 	
@@ -104,7 +104,7 @@ public abstract class Entity {
 		x = theX;
 		y = theY;
 		collisionBox.setLocation(theX, theY);		//The collision box of the entity is updated each time
-	}												//the method is invoked.
+	}							//the method is invoked.
 	
 	/**
 	 * A setter method that can set the velocity of the entity.
@@ -170,8 +170,8 @@ public abstract class Entity {
 	 */
 	public boolean collision(Entity entity){
 		isHit = collisionBox.intersects(entity.collisionBox);		//method of the Rectangle object
-		return isHit;												//that checks to see if it intersects 
-	}																//with another rectangle.
+		return isHit;							//that checks to see if it intersects 
+	}									//with another rectangle.
 	
 	/**
 	 * Method that returns the current value of the isHit boolean data member.
@@ -187,7 +187,7 @@ public abstract class Entity {
 	public void moveLeft(){
 		x -= velocity;
 		collisionBox.setLocation(x, y);						//updates the location of the entity
-	}														//hit box.
+	}										//hit box.
 	
 	/**
 	 * A method that moves the entity to the right.
@@ -195,7 +195,7 @@ public abstract class Entity {
 	public void moveRight(){
 		x +=velocity;
 		collisionBox.setLocation(x, y);						//updates the location of the entity
-	}														//hit box.
+	}										//hit box.
 	
 	/**
 	 * A method that moves the entity upward.
@@ -203,7 +203,7 @@ public abstract class Entity {
 	public void moveUp(){
 		y -= velocity;
 		collisionBox.setLocation(x,y);						//updates the location of the entity
-	}														//hit box.
+	}										//hit box.
 	
 	/**
 	 * A method that moves the entity downward.
@@ -211,7 +211,7 @@ public abstract class Entity {
 	public void moveDown(){
 		y += velocity;
 		collisionBox.setLocation(x, y);						//updates the location of the entity
-	}														//hit box.
+	}										//hit box.
 
 	
 }
