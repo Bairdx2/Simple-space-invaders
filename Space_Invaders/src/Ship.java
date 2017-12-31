@@ -46,7 +46,7 @@ public class Ship extends Entity{
 	 */
 	public void checkLeftBoundary(){
 		if(getX()<=SleftBorder){		//Sets the x coordinate if it has passed the left
-			setX(SleftBorder);			//border limit of the panel.
+			setX(SleftBorder);		//border limit of the panel.
 		}
 	}
 	
@@ -56,7 +56,7 @@ public class Ship extends Entity{
 	 */
 	public void checkRightBoundary(){
 		if(getX()>=SrightBorder){		//Sets the x coordinate if it has passed the right 
-			setX(SrightBorder);			//border limit of the panel.
+			setX(SrightBorder);		//border limit of the panel.
 		}
 	}
 	
